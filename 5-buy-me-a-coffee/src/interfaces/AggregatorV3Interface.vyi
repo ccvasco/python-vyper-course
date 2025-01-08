@@ -1,0 +1,23 @@
+# @license MIT
+
+# pragma version 0.4.0 
+
+@view
+@external
+def decimals() -> uint8: 
+    ...
+
+@view
+@external
+def description() -> String[1000]: 
+    ...
+
+@view
+@external
+def version() -> uint256: 
+    ...
+
+@view
+@external
+def latestAnswer() -> int256: 
+    ...

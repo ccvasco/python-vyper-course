@@ -1,0 +1,28 @@
+[project]
+src = "src"
+
+[networks.anvil]
+url = "http://127.0.0.1:8545"
+save_to_db = false
+prompt_live = false #to not have terminal asking if i want to go through
+default_account_name = "anvil1"
+unsafe_password_file = "~/.moccasin/unsafe_passwords/anvil1" #so does not request passowrd for pirvate-key file
+
+[networks.sepolia]
+url = "$SEPOLIA_RPC_URL"
+save_to_db = false
+default_account_name = "default"
+unsafe_password_file = "https://shape-sepolia.g.alchemy.com/v2/0kedaUNwjX2a9WfGuq-IIXVFbZlm0W2i"
+explorer_type = "alchemy"
+
+[networks.sepolia-zksync]
+url = "$ZKSYNC_SEPOLIA_RPC_URL"
+CHAIN_ID = 300
+save_to_db = false
+default_account_name = "default"
+unsafe_password_file = "https://zksync-sepolia.g.alchemy.com/v2/_ufw-UlAujrf1aRIHQzhLVuMPpZcW06p"
+explorer_uri = "https://explorer.sepolia.era.zksync.dev"
+explorer_type = "zksyncexplorer"
+is_zksync = true
+
+# You can view all configuration options at https://cyfrin.github.io/moccasin/all_moccasin_toml_parameters.html
