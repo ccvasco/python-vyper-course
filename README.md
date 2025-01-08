@@ -1,1 +1,1 @@
-# python-vyper-course
+# Ongoing Python & Vyper course in Cyfrin Updraft
